@@ -1,4 +1,4 @@
-# Article_api
+# README.md
 When running EKS, it requires specific networking. Because all environments will most likely be different, there's a CloudFormation template for this exact purpose.
 
 ---
@@ -43,8 +43,6 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 11. Record the VpcId for the VPC that was created. You need this when you launch your node group template.
 
 12. Record the SubnetIds for the subnets that were created and whether you created them as public or private subnets. When you add nodes to your cluster, you must specify the IDs of the subnets that you want to launch the nodes into.
-
-
 
 
 # Create an S3 bucket to store Terraform state files
