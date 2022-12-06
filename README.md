@@ -144,20 +144,19 @@ Once you authenticate to EKS from your local terminal, a `kubeconfig` gets store
 
 
 
-# Create The Kubernetes Manifest
 
+# Deployment
 At this point the Docker image has been succesfully created.
 
-Now it's time to set up the Kubernetes manifest, which will take the application and deploy it to EKS.
+Now it's time to set deploy it to EKS.
 
-## The Manifest
+The deployment.yml is what gets the application running in Kubernetes.(Edit the file to specification (ie image: and containerPort:))
+`Run kubectl create -f deployment.yml`
 
-The Kubernetes manifest will consist of two components:
-- The deployment
-- The service
+You'll see an output that specifies the service and deployment was created.
 
-The deployment is what gets the application running in Kubernetes
+Run the following command to confirm that the deployment was successful:
+`kubectl get deployments`
 
-The service is what exposes the Kubernetes application so you can, for example, reach the frontend from a load balancer hostname or IP.
 
-The manifest can be found in the `kubernetes_manifest` directory. 
+
