@@ -32,7 +32,7 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 
 - PrivateSubnet02Block: Specify a CIDR block for private subnet 2. The default value provides enough IP addresses for most implementations, but if it doesn't, then you can change it
 
-7. (Optional) On the Options page, tag your stack resources. Choose Next.
+7. On the Options page, tag your stack resources. Choose Next.
 
 8. On the Review page, choose Create.
 
