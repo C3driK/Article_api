@@ -93,15 +93,10 @@ The Terraform `main.tf` will do the following:
 - `terraform apply - To create the resource
 
 
-# Creating the Docker image for the Uber app
+# Creating the Docker image for the Api
 
-In this lab you will create a Docker image to containerize the Uber app.
-
-## Create The Docker Image
-
-1. The Dockerfile is already created containing all the required dependencies, use "docker build" to build the image, and "docker run" to run the image in a  docker container locally.
-2. To confirm the Docker container is running, run the following command:
-`docker container ls`
+1. The Dockerfile is already created containing all the required dependencies, use `docker build` to build the image, and `docker run` to run the image in a docker container locally.
+2. To confirm the Docker container is running, run `docker container ls`
 
 You should now see the container running.
 
@@ -143,10 +138,8 @@ Once you authenticate to EKS from your local terminal, a `kubeconfig` gets store
 
 
 
-# Deployment
+# Deployment to EKS
 At this point the Docker image has been succesfully created.
-
-Now it's time to set deploy it to EKS.
 
 The deployment.yml is what gets the application running in Kubernetes.(Edit the file to specification (ie image: and containerPort:))
 `Run kubectl create -f deployment.yml`
